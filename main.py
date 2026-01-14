@@ -1,6 +1,4 @@
 import os
-BOT_TOKEN = os.getenv("8090382044:AAG6I4Qf6qVYU6dEgBV9dFQlvQeTZpkfBW4")
-ADMIN_ID = int(os.getenv("1496986122"))
 import asyncio
 from aiogram import Bot, Dispatcher, F
 from aiogram.types import Message, CallbackQuery
@@ -8,7 +6,9 @@ from aiogram.filters import Command
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 from datetime import datetime
 
-BOT_TOKEN = "ТОКЕН_ТВОЕГО_БОТА"
+# Получаем токен и ID из переменных окружения Railway
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+ADMIN_ID = int(os.getenv("ADMIN_ID"))
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()

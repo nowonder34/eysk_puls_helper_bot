@@ -1,3 +1,6 @@
+import os
+BOT_TOKEN = os.getenv("8090382044:AAG6I4Qf6qVYU6dEgBV9dFQlvQeTZpkfBW4")
+ADMIN_ID = int(os.getenv("1496986122"))
 import asyncio
 from aiogram import Bot, Dispatcher, F
 from aiogram.types import Message, CallbackQuery
